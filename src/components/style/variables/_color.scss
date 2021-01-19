@@ -1,0 +1,30 @@
+// Global
+$color-white: #ffffff;
+$color-black: #000000;
+
+$colors: (
+  error: #ff5252,
+  info: #2196f3,
+  success: #4caf50,
+  warning: #dfa700,
+);
+
+// Light
+$light: (
+  background: #e5e5e5,
+  shadow-dark: #c3c3c3,
+  shadow-light: #ffffff,
+  text: rgba(0, 0, 0, 0.93),
+  text-secondary: rgba(0, 0, 0, 0.7),
+  text-disabled: rgba(0, 0, 0, 0.45),
+);
+
+// Dark
+$dark: (
+  background: #444444,
+  shadow-dark: #363636,
+  shadow-light: #525252,
+  text: rgba(255, 255, 255, 0.93),
+  text-secondary: rgba(255, 255, 255, 0.7),
+  text-disabled: rgba(255, 255, 255, 0.45),
+);

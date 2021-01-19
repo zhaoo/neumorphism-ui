@@ -1,0 +1,26 @@
+@import '../variables/color.scss';
+
+:root {
+  @each $name, $color in $light {
+    --color-#{$name}: #{$color};
+  }
+}
+
+@mixin dark {
+  @each $name, $color in $dark {
+    --color-#{$name}: #{$color};
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([data-theme]) {
+    @include dark;
+  }
+}
+
+[data-theme='dark'] {
+  @include dark;
+}
