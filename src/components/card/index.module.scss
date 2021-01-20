@@ -1,0 +1,20 @@
+.neu-card {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  box-shadow: 3px 3px 6px var(--color-shadow-dark),
+    -3px -3px 6px var(--color-shadow-light);
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
+
+  &.neu-card--inset {
+    box-shadow: inset -2px -2px 5px var(--color-shadow-light),
+      inset 2px 2px 5px var(--color-shadow-dark);
+  }
+
+  &.neu-card--disabled {
+    opacity: 0.38;
+    user-select: none;
+    pointer-events: none;
+  }
+}

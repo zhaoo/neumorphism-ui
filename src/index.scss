@@ -14,4 +14,15 @@
 
 .neu-text-section {
   @include section-padding;
+  & > * {
+    margin-bottom: 5px;
+  }
+}
+
+.neu-card-section {
+  @include section-padding;
+  & > * {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }

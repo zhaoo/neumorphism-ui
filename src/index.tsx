@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Text } from './components'
+import { Button, Text, Card } from './components'
 import './components/style/index.scss'
 import './index.scss'
 
@@ -23,6 +23,20 @@ ReactDOM.render(
       <Text lines={2}>
         别凑字数啦，没用哒！别凑字数啦，没用哒！别凑字数啦，没用哒！别凑字数啦，没用哒！别凑字数啦，没用哒！别凑字数啦，没用哒！别凑字数啦，没用哒！
       </Text>
+    </section>
+    <section className="neu-card-section">
+      <Card>
+        <Text>命运把拥有变作失去</Text>
+        <Text>疲倦的双眼带着希望</Text>
+      </Card>
+      <Card type="inset">
+        <Text>命运把拥有变作失去</Text>
+        <Text>疲倦的双眼带着希望</Text>
+      </Card>
+      <Card disabled>
+        <Text>命运把拥有变作失去</Text>
+        <Text>疲倦的双眼带着希望</Text>
+      </Card>
     </section>
   </div>,
   document.getElementById('root')
