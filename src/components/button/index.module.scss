@@ -53,4 +53,12 @@ $sizes: (small, normal, large);
     border-color: var(--color-text-disabled);
     color: var(--color-text-disabled);
   }
+
+  &.neu-button--flat {
+    box-shadow: none;
+    &:active {
+      box-shadow: inset -2px -2px 5px var(--color-shadow-light),
+        inset 2px 2px 5px var(--color-shadow-dark);
+    }
+  }
 }

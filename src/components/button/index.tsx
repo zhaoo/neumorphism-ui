@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 interface IButtonProps {
   children: ReactNode
   type?: 'error' | 'info' | 'success' | 'warning'
-  shape?: 'round'
+  shape?: 'round' | 'flat'
   size?: 'small' | 'normal' | 'large'
   disabled?: boolean
   className?: string

@@ -16,6 +16,9 @@ ReactDOM.render(
       <Button type="warning">警告</Button>
       <Button disabled>禁用</Button>
       <Button shape="round">椭圆</Button>
+      <Button shape="flat" type="info">
+        扁平
+      </Button>
     </section>
     <section className="neu-text-section">
       <Text>Helle, Word!</Text>
