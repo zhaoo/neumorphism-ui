@@ -1,9 +1,17 @@
+@mixin section-padding {
+  padding: 15px 30px;
+}
+
 .neu-container {
   width: 100%;
 }
 
-.neu-buttons-section {
-  padding: 30px;
+.neu-button-section {
+  @include section-padding;
   display: flex;
   flex-wrap: wrap;
+}
+
+.neu-text-section {
+  @include section-padding;
 }

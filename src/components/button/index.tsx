@@ -1,4 +1,4 @@
-import { FC, ReactNode, CSSProperties } from 'react'
+import React, { FC, ReactNode, CSSProperties } from 'react'
 import classNames from 'classnames'
 import styles from './index.module.scss'
 
@@ -8,6 +8,7 @@ interface IButtonProps {
   shape?: 'round'
   size?: 'small' | 'normal' | 'large'
   disabled?: boolean
+  className?: string
   style?: CSSProperties
 }
 
@@ -18,15 +19,17 @@ const Button: FC<IButtonProps> = (props) => {
     shape,
     size = 'normal',
     disabled = false,
+    className,
     style,
   } = props
 
   const buttonClass = classNames([
     styles['neu-button'],
-    styles[`neu-button--${shape}`],
     type ? styles[`neu-button--${type}`] : null,
+    styles[`neu-button--${shape}`],
     styles[`neu-button--${size}`],
     disabled ? styles['neu-button--disabled'] : null,
+    className,
   ])
 
   return (

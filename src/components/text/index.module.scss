@@ -1,0 +1,13 @@
+.neu-text {
+  color: var(--color-text);
+
+  &.neu-text--lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &.neu-text--unselectable {
+    user-select: none;
+  }
+}
