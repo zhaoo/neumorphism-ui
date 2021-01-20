@@ -1,4 +1,9 @@
-.neu-button-section {
+.neu-container {
+  width: 100%;
+}
+
+.neu-buttons-section {
   padding: 30px;
   display: flex;
+  flex-wrap: wrap;
 }

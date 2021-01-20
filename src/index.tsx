@@ -5,8 +5,8 @@ import './components/style/index.scss'
 import './index.scss'
 
 ReactDOM.render(
-  <>
-    <section className="neu-button-section">
+  <div className="neu-container">
+    <section className="neu-buttons-section">
       <Button size="small">小号</Button>
       <Button size="normal">中号</Button>
       <Button size="large">大号</Button>
@@ -17,6 +17,6 @@ ReactDOM.render(
       <Button disabled>禁用</Button>
       <Button shape="round">椭圆</Button>
     </section>
-  </>,
+  </div>,
   document.getElementById('root')
 )
